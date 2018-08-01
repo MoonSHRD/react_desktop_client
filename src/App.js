@@ -1,21 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
 
+import Loading from './Components/loading';
+import Unauthed from './Components/unauthed';
+import Offline from './Components/offline';
+import Online from './Components/online';
+
+const APP_STATES = [
+    Loading,
+    Unauthed,
+    Offline,
+    Online,
+];
+
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React/Electron</h2>
-        </div>
-        <p className="App-intro">
-          Hello dfdf Electron!
-        </p>
-      </div>
-    );
-  }
+
+    status = APP_STATES[1];
+
+    change_state = (state) => {
+        this.status=state
+    };
+
+    render() {
+        return (
+            <this.status change_app_state={this.change_state} app_states={APP_STATES}/>
+        );
+    }
 }
 
 export default App;
