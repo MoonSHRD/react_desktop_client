@@ -1,0 +1,20 @@
+.chats_block {
+
+    position: relative;
+    width: 350px;
+    background-color: #F3F3F3;
+    height: 100vh;
+
+}
+
+.chats_block_header {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.chats_block_header_title {
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+
+}

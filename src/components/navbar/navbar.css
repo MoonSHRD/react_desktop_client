@@ -1,0 +1,62 @@
+.icon-bar {
+    width: 70px; /* Set a specific width */
+    background-color: #363C64; /* Dark-grey background */
+    height: 100vh;
+    z-index: 100;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.icon-bar a {
+    display: inline-flex; /* Make the links appear below each other instead of side-by-side */
+    /*text-align: center; !* Center-align text *!*/
+    padding: 15px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 30px; /* Increased font-size */
+    overflow: hidden;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.icon-bar a:first-child {
+    padding-left: 23px;
+}
+
+.icon-bar input {
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.icon-bar span {
+    font-size: 20px;
+    margin-left: 30px;
+    white-space: nowrap
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: #4CAF50; /* Add an active/current color */
+}
+
+.menuFull {
+    background-color: #363C64;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 71px;
+    z-index: 0;
+    height: 100vh;
+}
+
+.resize {
+    width: 400px;
+}
+
