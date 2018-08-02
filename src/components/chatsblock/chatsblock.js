@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Switch from '../switch/switch';
-import Infopanel from '../infopanel/infopanel';
+import Infopanel from './infopanel/infopanel';
 
-import './chatscontent.css';
+import './chatsblock.css';
+import Chats from "./chats/chats";
 
 
-class Chatscontent extends Component {
+class Chatsblock extends Component {
     render() {
         return (
             <div className="chats_block">
@@ -13,9 +14,10 @@ class Chatscontent extends Component {
                     <Switch/>
                     <Infopanel/>
 
-                    <div className="chats_block_header_content">
-                    </div>
+
+
                 </div>
+                <Chats/>
 
 
             </div>
@@ -24,4 +26,4 @@ class Chatscontent extends Component {
     }
 }
 
-export default Chatscontent;
+export default Chatsblock;

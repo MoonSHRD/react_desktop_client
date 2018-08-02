@@ -3,13 +3,13 @@ import './navbar.css';
 import $ from 'jquery'
 import 'jquery-ui-bundle';
 import 'jquery-ui-bundle/jquery-ui.css';
+import Label from "./label/label";
 
 
 window.onload = function () {
 
-    // $('.icon-bar').css('width', '400px');
 
-    $('.icon-bar').click(function() {
+    $('.menuBtn').click(function() {
 
         $('.icon-bar').toggleClass('resize', 500)
     })
@@ -32,12 +32,66 @@ class Navbar extends Component {
     render() {
         return (
             <div id="menu" className="icon-bar">
-                <a href="#"><img src={require('./img/logo.png')} /><span>MOON SHARD</span> </a>
-                <a href="#"><img src={require('./img/search.png')} />  <input type="text" /> </a>
-                <a href="#"><img src={require('./img/chats.png')} /> <span>Чаты</span> </a>
-                <a href="#"><img src={require('./img/groups.png')} /> <span>Группы</span></a>
-                <a href="#"><img src={require('./img/balance.png')} /> <span>Баланс</span></a>
-                <a href="#"><img src={require('./img/settings.png')} /><span>Настройки</span> </a>
+                <div className="menu">
+                    <a href="#">
+                        <div className="image">
+                            <img src={require('./img/logo.png')} />
+                        </div>
+                        <span>MOON SHARD</span>
+                    </a>
+                    <a href="#" className="menuBtn">
+                        <div className="image">
+                        <img src={require('./img/burger.png')} />
+                        </div>
+                        <span></span>
+                    </a>
+                    <a href="#">
+                        <div className="image">
+                        <img src={require('./img/men.png')} />
+                        </div>
+                            <span>Люди</span>
+                        <Label notice={4} />
+                    </a>
+
+                    <a href="#">
+                        <div className="image">
+                        <img src={require('./img/groups.png')} />
+                        </div>
+                        <span>Группы</span>
+                        <Label notice={7}/>
+                    </a>
+                    <a href="#">
+                        <div className="image">
+                        <img src={require('./img/balance.png')} />
+                        </div>
+                        <span>Кошелек</span>
+                        <Label notice={14}/>
+
+                    </a>
+                    <a href="#">
+                        <div className="image">
+                            <img src={require('./img/calendar.png')} />
+                        </div>
+                        <span>Календарь</span>
+                        <Label notice={2}/>
+                    </a>
+                    <a href="#">
+                        <div className="image">
+                        <img src={require('./img/settings.png')} />
+                        </div>
+                        <span>Настройки</span>
+                    </a>
+
+                </div>
+
+                <div className="exit">
+                    <a href="#">
+                        <div className="image">
+                        <img src={require('./img/logout.png')} />
+                        </div>
+                        <span></span>
+                    </a>
+                </div>
 
             </div>
 

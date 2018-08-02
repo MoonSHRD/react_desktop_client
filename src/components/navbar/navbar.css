@@ -1,30 +1,46 @@
 .icon-bar {
     width: 70px; /* Set a specific width */
     background-color: #363C64; /* Dark-grey background */
-    height: 100vh;
+    /*height: 100%;*/
     z-index: 100;
     font-family: 'Open Sans', sans-serif;
-
+    /*min-height: 100%;*/
+    overflow: hidden;
 
 }
 
-.icon-bar a {
+
+
+.image{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-bar a,.exit a {
     display: inline-flex; /* Make the links appear below each other instead of side-by-side */
-    /*text-align: center; !* Center-align text *!*/
     padding: 15px; /* Add some padding */
     transition: all 0.3s ease; /* Add transition for hover effects */
     color: white; /* White text color */
-    font-size: 30px; /* Increased font-size */
-    overflow: hidden;
+    font-size: 25px; /* Increased font-size */
     text-decoration: none;
     box-sizing: border-box;
-    width: 100%;
+    width: 220px;
     align-items: center;
-    padding-left: 20px;
+    position: relative;
 }
 
 .icon-bar a:first-child {
-    padding-left: 23px;
+    /*padding-left: 27px;*/
+}
+
+
+.menu{
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 .icon-bar input {
@@ -33,7 +49,7 @@
 }
 
 .icon-bar span {
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 30px;
     white-space: nowrap
 }
@@ -57,6 +73,6 @@
 }
 
 .resize {
-    width: 400px;
+    width: 220px;
 }
 
