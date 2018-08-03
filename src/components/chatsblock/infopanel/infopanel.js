@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './infopanel.css';
 
 class Infopanel extends Component {
@@ -6,11 +7,10 @@ class Infopanel extends Component {
         return (
             <div id="menu" className="infopanel">
                 <div className="chats_block_header_title">
-                    <h3>Кто рядом с вами</h3>
+                    <img src={require('./header.png')} width="350" />
                 </div>
-                <div className="chats_block_header_content">
-                    gfhgfhgfh
-                </div>
+                {/*<div className="chats_block_header_content">*/}
+                {/*</div>*/}
             </div>
 
         );

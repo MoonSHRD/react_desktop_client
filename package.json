@@ -12,8 +12,13 @@
     "jquery": "^3.3.1",
     "jquery-ui": "^1.12.1",
     "jquery-ui-bundle": "^1.12.1-migrate",
+    "moment": "^2.22.2",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "react-datetime": "^2.15.0",
+    "react-dom": "^16.1.1",
+    "react-moment": "^0.7.9",
+    "react-owl-carousel2": "^0.3.0",
+    "react-time": "^4.3.0"
   },
   "homepage": "./",
   "main": "src/electron-starter.js",

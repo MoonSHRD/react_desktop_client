@@ -11,7 +11,7 @@ class Chatsblock extends Component {
         return (
             <div className="chats_block">
                 <div className="chats_block_header">
-                    <Switch/>
+                    {/*<Switch/>*/}
                     <Infopanel/>
 
 
